@@ -1,0 +1,14 @@
+{%extends "layout.html"%}
+
+{%block content%}
+<div class="home">
+    <h1>Please validate OTP sent to your registered mail. <br/>(Please check Junk box and Spam folder as well)</h1>
+    <p>
+        <form action="/validate" method="POST">
+            Email: <input type="text" name = "email" value="{{email}}" readonly>
+            OTP: <input type = "text" name = "otp"placeholder="OTP here"></input><br>
+            <button>Submit</button>
+        </form>
+    </p>
+</div>
+{%endblock%}

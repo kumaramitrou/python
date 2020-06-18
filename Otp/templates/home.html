@@ -1,0 +1,17 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="home">
+    <h1>Get your Voucher here.</h1>
+    <p>
+        <form action="/email" method="POST">
+            <div>
+                <label for="Email">email:</label>
+                <input type="email" class="form-control" name="email" placeholder="your email here" required="required"/>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </p>
+</div>
+{%endblock%}
